@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* shared style */
+.flex{
+    display: flex;
+}
+
+/* Header styles here  */
+/* nav styles here  */
+.nav-container{
+    max-width: 1600px;
+    width: 100%;
+    height: auto;
+    border: 1px solid red;
+    border-bottom: 1px solid rgba(65, 37, 103, 1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 16px;
+    background-color: #412567;
+
+}
+.nav-container .nav-pic{
+    max-width: 219px;
+    width: 100%;
+    height: auto;
+}
+.nav-container .nav-pic img{
+    width: 100%;
+    display: block;
+}
+
+.nav-container ul{
+    max-width: 218px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px; 
+}
+.nav-container ul li{
+    list-style: none;
+}
+.nav-container ul li a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+.nav-container .btn{
+    max-width: 135px;
+    width: 100%;
+    padding: 12.5px;
+    border-radius: 10000px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    background: linear-gradient(45deg, #FFD700, #FF69B4, #8A2BE2);
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.nav-container .hamburger{
+    max-width: 24px;
+    width: 24px;
+    height: auto;
+    display: none;
+}
+
+/* banner styles here  */
+
+
+/* Responsive styles here  */
+@media screen and (max-width:576px) {
+    /* header responsive here  */
+    /* nav responsive here */
+    .nav-container .nav-pic{
+        max-width: 137px;
+        width: 100%;
+        height: auto;
+    }
+    .nav-container ul{
+        display: none;
+    }
+    .nav-container .btn{
+        display: none;
+    }
+    .nav-container .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+
+    /* Banner responsive here  */
+}
