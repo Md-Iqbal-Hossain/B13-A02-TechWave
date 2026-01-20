@@ -15,6 +15,13 @@
 .flex {
     display: flex;
 }
+.about-para{
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 2;
+}
 
 /* Header styles here  */
 /* nav styles here  */
@@ -219,6 +226,54 @@
   color: #00FF88;
 } */
 
+/* about styles here  */
+.about{
+    max-width: 1600px;
+    width: 100%;
+    height: auto;
+    border: 1px solid red;
+    background-color: #1A0B2E;
+}
+.a-des{
+    max-width: 1200px;
+    width: 100%;
+    height: auto;
+    margin: 50px auto 0 auto;
+    border: 1px solid green;
+}
+.a-title{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+.a-p4{
+    margin-top: 25px;
+}
+hr{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.a-rate{
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 120px;
+}
+.rate1, .rate2, .rate3, .rate4{
+    margin-left: 80px;
+}
+.rate1 h1, .rate2 h1, .rate3 h1, .rate4 h1{
+    color: #00FF88;
+    font-size: 3rem;
+}
+.rate1 p, .rate2 p, .rate3 p, .rate4 p{
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 1rem;
+
+}
 .none {
     display: none !important;
 }
@@ -319,6 +374,51 @@
 .bg .b-btn2{
     top: 85%;
     left: 60%;
+}
+
+/* about responsive here  */
+.about{
+    max-width: 576px;
+    width: 100%;
+    height: auto;
+}
+.a-des{
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin: 20px auto 0 auto;
+    border: 1px solid green;
+}
+.a-title{
+    font-size: 2rem;
+}
+.a-p4{
+    margin-top: 10px;
+}
+.about-para{
+    line-height: 1;
+}
+hr{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.a-rate{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+}
+.rate1, .rate2, .rate3, .rate4{
+    margin-left: 10px;
+}
+.rate1 h1, .rate2 h1, .rate3 h1, .rate4 h1{
+    font-size: 2.5rem;
+    padding-top: 10px;
+}
+.rate1 p, .rate2 p, .rate3 p, .rate4 p{
+    margin-top: 1rem;
 }
 
 }
