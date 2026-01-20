@@ -11,6 +11,35 @@
     box-sizing: border-box;
 }
 
+/* Keyframes */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
 /* shared style */
 .flex {
     display: flex;
@@ -50,6 +79,9 @@
 .nav-container .nav-pic img {
     width: 100%;
     display: block;
+
+    /* animation */
+    animation: pulse 2s ease-in-out infinite;
 }
 
 .nav-container ul {
@@ -233,7 +265,7 @@
     max-width: 1600px;
     width: 100%;
     height: auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background-color: #1A0B2E;
 }
 
@@ -241,8 +273,8 @@
     max-width: 1200px;
     width: 100%;
     height: auto;
-    margin: 50px auto 0 auto;
-    border: 1px solid green;
+    margin: 0px auto 0 auto;
+    /* border: 1px solid green; */
 }
 
 .a-title {
@@ -251,6 +283,7 @@
     font-size: 3rem;
     font-weight: 700;
     padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 .a-p4 {
@@ -299,16 +332,18 @@ hr {
     max-width: 1600px;
     width: 100%;
     height: auto;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     background-color: #250D44;
+    padding-bottom: 20px;
 }
 
 .w-container {
     max-width: 1200px;
     width: 100%;
     height: auto;
-    margin: 120px auto 120px auto;
-    border: 1px solid green;
+    margin: 0 auto 0 auto;
+    padding-top: 120px;
+    /* border: 1px solid green; */
 }
 
 .w-container h5 {
@@ -403,7 +438,7 @@ hr {
     max-width: 1600px;
     width: 100%;
     height: auto;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     background-color: #1A0B2E;
 }
 
@@ -411,8 +446,9 @@ hr {
     max-width: 1200px;
     width: 100%;
     height: auto;
-    margin: 120px auto 120px auto;
-    border: 1px solid green;
+    margin: 0px auto 0px auto;
+    padding: 40px 0 40px 0;
+    /* border: 1px solid green; */
 }
 
 .f-container h5 {
@@ -484,7 +520,7 @@ hr {
     max-width: 1600px;
     width: 100%;
     height: auto;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     background-color: #1A0B2E;
 }
 
@@ -492,8 +528,9 @@ hr {
     max-width: 1200px;
     width: 100%;
     height: auto;
-    margin: 0 auto 120px auto;
-    border: 1px solid green;
+    margin: 0 auto 0 auto;
+    padding-bottom: 40px;
+    /* border: 1px solid green; */
 
 }
 
@@ -518,6 +555,10 @@ hr {
     max-height: 200px;
 
     margin: 40px 24px 40px 40px;
+
+    /* animation */
+    /* animation: pulse 2s ease-in-out infinite; */
+    animation: float 3s ease-in-out infinite;
 }
 
 .h-des h6 {
@@ -559,6 +600,7 @@ hr {
     padding: 10px;
     border: 1px solid gray;
     border-radius: 50%;
+    cursor: pointer;
 
 }
 
@@ -630,6 +672,7 @@ hr {
 .foot3,
 .foot4 {
     gap: 8px;
+    cursor: pointer;
 
 }
 
@@ -698,13 +741,13 @@ hr {
     .banner {
         max-width: 576px;
         width: 100%;
-        height: 460px;
+        height: 475px;
     }
 
     .bg {
         max-width: 576px;
         width: 100%;
-        height: 460px;
+        height: 480px;
 
         background-image: url(../assets/hero-bg.png);
 
@@ -787,8 +830,8 @@ hr {
         max-width: 400px;
         width: 100%;
         height: auto;
-        margin: 20px auto 0 auto;
-        border: 1px solid green;
+        margin: 0 auto;
+        /* border: 1px solid green; */
     }
 
     .a-title {
@@ -850,8 +893,8 @@ hr {
         max-width: 400px;
         width: 100%;
         height: auto;
-        margin: 40px auto 40px auto;
-        padding: 0 20px 0 20px;
+        margin: 0 auto 40px auto;
+        padding: 20px 20px 0 20px;
     }
 
     .w-container h5 {
@@ -890,7 +933,7 @@ hr {
         font-size: 1.38rem;
         font-weight: 700;
         margin-left: 2.5rem;
-        margin-bottom: 1rem;
+        /* margin-bottom: 1rem; */
     }
 
     .card1 p,
@@ -902,7 +945,7 @@ hr {
         font-size: 1rem;
         font-weight: 400;
         margin-left: 2.5rem;
-        margin-bottom: 2.5rem;
+        margin-bottom: 1.5rem;
         opacity: 60%;
         padding-right: 20px;
     }
@@ -927,8 +970,12 @@ hr {
         max-width: 400px;
         width: 100%;
         height: auto;
-        margin: 40px auto 40px auto;
-        padding: 0 20px 0 20px;
+        /* margin: 40px auto 40px auto;
+        padding: 0 20px 0 20px; */
+
+        margin: 0px auto 0px auto;
+        padding: 20px;
+
     }
 
     .f-container h5 {
@@ -998,8 +1045,10 @@ hr {
         max-width: 400px;
         width: 100%;
         height: auto;
-        margin: 0px auto 40px auto;
-        padding: 0 20px 0 20px;
+        margin: 0px auto 0 auto;
+        padding: 20px;
+        /* padding-top: 20px;
+        padding-bottom: 20px; */
 
     }
 
